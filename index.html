@@ -1,134 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyncademiaAI - Future of AI</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syncademia AI</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Particle Background -->
-    <div id="particles-js"></div>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
 
-    <!-- Navigation Bar -->
-    <nav>
+  <!-- Floating Blob SVG -->
+  <svg class="floating-blob blob-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#007bff" d="M40.5,-69.1C50.5,-61.3,56.9,-50.3,64.1,-38.9C71.3,-27.5,79.3,-13.8,79.2,-0.3C79.2,13.2,70.9,26.5,61.4,37.5C51.9,48.6,41.1,57.4,28.9,63.6C16.8,69.7,3.4,73.2,-9.3,75C-22.1,76.9,-34.2,77.1,-45.2,71.8C-56.3,66.4,-66.2,55.4,-69.9,43C-73.6,30.5,-71.1,16.8,-71.1,2.8C-71.1,-11.2,-73.5,-25.3,-66.7,-35.2C-59.9,-45.2,-44,-50.9,-30.4,-57.6C-16.9,-64.2,-8.4,-71.7,3.5,-76.2C15.3,-80.7,30.7,-82.4,40.5,-69.1Z" transform="translate(100 100)" />
+  </svg>
+
+  <!-- Glow Edges -->
+  <div id="site-wrapper">
+    <span class="glow-top"></span>
+    <span class="glow-bottom"></span>
+
+    <!-- Navigation -->
+    <header>
+      <nav>
         <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#clarity">Clarity Mode</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <h1 class="neon-title">Syncademia-Ai</h1>
-        <p class="tagline">AI-Driven Productivity for Students</p>
-        <button class="cta" id="explore-btn">Get Started</button>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Syncademia AI</h1>
+        <p>Your AI Operating System for student life. Balance school, hustle, and wellness — without burnout.</p>
+        <button class="cta">Start Free Demo</button>
+      </div>
     </section>
 
-    <!-- Auto Sync Section -->
-    <section id="auto-sync" class="content hidden">
-        <h2>Sync Your Schedule in Seconds</h2>
-        <p>Connect Syncademia AI with Google Calendar & Notion to automate your tasks instantly.</p>
-        <button id="sync-now" class="cta">Auto Sync Now</button>
+    <!-- Mission Section -->
+    <section id="mission" class="section">
+      <h2>Our Mission</h2>
+      <p>We help students stay ahead without burning out. Syncademia simplifies academic, business, and personal life with an AI-powered planner that just gets it.</p>
+      <div class="grid">
+        <div class="card">🎯 Simplify Everything<br/>Track tasks, goals, classes, and side projects — all in one place.</div>
+        <div class="card">🤖 Real AI Built In<br/>Smart scheduling that adapts to your workflow and habits.</div>
+        <div class="card">⚡ Seamless Sync<br/>Connects with Notion, Google Calendar, and school platforms like D2L.</div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="content">
-        <h2>Why Syncademia AI?</h2>
-        <div class="about-container">
-            <div class="about-text">
-                <p>Stay ahead without burnout. Syncademia AI is the only planner built for students juggling <strong>academics and side hustles</strong>. </p>
-                <h3>What Makes Us Unique?</h3>
-                <ul>
-                    <li><strong>AI-Powered Scheduling:</strong> Automates study plans, so you never miss a deadline.</li>
-                    <li><strong>Smart Integrations:</strong> Syncs with <strong>Google Calendar</strong> & <strong>Notion</strong> for real-time updates.</li>
-                    <li><strong>Adaptive Learning:</strong> Adjusts based on workload, deadlines, and study habits.</li>
-                    <li><strong>Built for Student Entrepreneurs:</strong> Handles coursework & business tasks effortlessly.</li>
-                </ul>
-            </div>
-            <div class="about-image">
-                <img src="about-image.png" alt="SyncademiaAI Overview">
-            </div>
-        </div>
+    <!-- Product Section -->
+    <section id="product" class="section">
+      <h2>What Syncademia Does</h2>
+      <div class="grid">
+        <div class="card">📚 Academic Sync<br/>Pulls deadlines directly from school platforms.</div>
+        <div class="card">📆 AI Scheduling<br/>Plans your time based on energy, deadlines, and availability.</div>
+        <div class="card">🚀 Side Hustle Mode<br/>Blocks creative time for your startup, projects, or freelance work.</div>
+        <div class="card">📈 Habit Intelligence<br/>Optimizes your calendar by learning from your routine.</div>
+      </div>
     </section>
 
-    <!-- Key Features -->
-    <section id="features" class="content">
-        <h2>Key Features</h2>
-        <div class="feature">
-            <img src="ai-icon.png" alt="AI-Powered Assistance">
-            <h3>AI-Powered Assistance</h3>
-            <p>Get real-time AI recommendations for optimized study sessions.</p>
-        </div>
-        <div class="feature">
-            <img src="collab-icon.png" alt="Collaboration">
-            <h3>Collaboration</h3>
-            <p>Seamless group study tools with shared scheduling.</p>
-        </div>
-        <div class="feature">
-            <img src="insights-icon.png" alt="Smart Insights">
-            <h3>Smart Insights</h3>
-            <p>AI-driven performance analytics for better time management.</p>
-        </div>
+    <!-- Clarity Mode Section -->
+    <section id="clarity" class="section">
+      <h2>Mental Clarity Mode</h2>
+      <div class="grid">
+        <div class="card">🧠 Burnout Alerts<br/>Get proactive nudges when your load is too much.</div>
+        <div class="card">💤 Energy-Aware Scheduling<br/>Syncs in breaks, rest, and off-time into your week.</div>
+        <div class="card">📊 Mood Sync<br/>Light feedback check-ins adjust your calendar dynamically.</div>
+        <div class="card">🎯 Focus Recovery<br/>Recovers momentum when attention dips.</div>
+      </div>
     </section>
 
-    <!-- Plans & Pricing -->
-    <section id="pricing" class="content">
-        <h2>Plans & Pricing</h2>
-        <div class="plan">
-            <h3>Free Plan</h3>
-            <p>Access core features at no cost.</p>
-            <button class="cta">Try for Free</button>
-        </div>
-        <div class="plan">
-            <h3>Premium Plan</h3>
-            <p>Unlock advanced AI features, insights, and 24/7 support.</p>
-            <button class="cta">Upgrade Now</button>
-        </div>
-    </section>
-
-    <!-- Statistics -->
-    <section id="stats" class="content">
-        <h2>Our Impact</h2>
-        <p><span class="counter" data-target="1000">0</span>+ Active Users</p>
-        <p><span class="counter" data-target="500">0</span>+ AI-Powered Insights Daily</p>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="content">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <button class="faq-question">How does AI improve study planning?</button>
-            <div class="faq-answer">StudySync AI learns your habits and deadlines, automatically creating the best study plan for you.</div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question">Is the free version enough for students?</button>
-            <div class="faq-answer">Yes! The free version includes AI scheduling and basic integrations.</div>
-        </div>
+    <!-- Pricing Section -->
+    <section id="pricing" class="section">
+      <h2>Plans & Add-Ons</h2>
+      <div class="grid">
+        <div class="card">Free Demo<br/>Try AI Scheduler, Clarity Mode, and Calendar Sync for free.<br/><button class="cta">Try Demo</button></div>
+        <div class="card">Pro<br/>Unlock the AI Coach, Hustle Pack, Resume Builder, and priority LMS features.<br/><button class="cta">Upgrade Now</button></div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="content">
-        <h2>Contact Us</h2>
-        <p>Have questions? Reach out to us!</p>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="cta">Send Message</button>
-        </form>
+    <section id="contact" class="section">
+      <h2>Contact the Team</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 StudySyncAI. All Rights Reserved.</p>
+      <p>© 2025 Syncademia AI. Built by Leonard Nicolass and team. Empowering students everywhere.</p>
     </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
