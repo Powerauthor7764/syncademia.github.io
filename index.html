@@ -3,106 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Syncademia AI</title>
+  <title>Syncademia | AI for Student Success</title>
   <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
+
   <!-- Particle Background -->
   <div id="particles-js"></div>
 
-  <!-- Floating Blob SVG -->
-  <svg class="floating-blob blob-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <path fill="#007bff" d="M40.5,-69.1C50.5,-61.3,56.9,-50.3,64.1,-38.9C71.3,-27.5,79.3,-13.8,79.2,-0.3C79.2,13.2,70.9,26.5,61.4,37.5C51.9,48.6,41.1,57.4,28.9,63.6C16.8,69.7,3.4,73.2,-9.3,75C-22.1,76.9,-34.2,77.1,-45.2,71.8C-56.3,66.4,-66.2,55.4,-69.9,43C-73.6,30.5,-71.1,16.8,-71.1,2.8C-71.1,-11.2,-73.5,-25.3,-66.7,-35.2C-59.9,-45.2,-44,-50.9,-30.4,-57.6C-16.9,-64.2,-8.4,-71.7,3.5,-76.2C15.3,-80.7,30.7,-82.4,40.5,-69.1Z" transform="translate(100 100)" />
-  </svg>
-
-  <!-- Glow Edges -->
-  <div id="site-wrapper">
-    <span class="glow-top"></span>
-    <span class="glow-bottom"></span>
-
-    <!-- Navigation -->
-    <header>
-      <nav>
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">Syncademia</div>
+      <nav class="nav">
         <ul>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#mission">Mission</a></li>
-          <li><a href="#product">Product</a></li>
-          <li><a href="#clarity">Clarity Mode</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#mental">Mental Health</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+  <!-- Hero Section -->
+  <div class="section-wrapper" style="padding-bottom: 40px;">
+    <section class="hero fade-in">
       <div class="hero-content">
-        <h1>Syncademia AI</h1>
-        <p>Your AI Operating System for student life. Balance school, hustle, and wellness — without burnout.</p>
-        <button class="cta">Start Free Demo</button>
+        <h1 class="hover-move">Syncademia AI</h1>
+        <p class="hover-move">The all-in-one student OS: Sync your schedule, projects, and peace of mind. Built for clarity, powered by AI.</p>
       </div>
     </section>
-
-    <!-- Mission Section -->
-    <section id="mission" class="section">
-      <h2>Our Mission</h2>
-      <p>We help students stay ahead without burning out. Syncademia simplifies academic, business, and personal life with an AI-powered planner that just gets it.</p>
-      <div class="grid">
-        <div class="card">🎯 Simplify Everything<br/>Track tasks, goals, classes, and side projects — all in one place.</div>
-        <div class="card">🤖 Real AI Built In<br/>Smart scheduling that adapts to your workflow and habits.</div>
-        <div class="card">⚡ Seamless Sync<br/>Connects with Notion, Google Calendar, and school platforms like D2L.</div>
-      </div>
-    </section>
-
-    <!-- Product Section -->
-    <section id="product" class="section">
-      <h2>What Syncademia Does</h2>
-      <div class="grid">
-        <div class="card">📚 Academic Sync<br/>Pulls deadlines directly from school platforms.</div>
-        <div class="card">📆 AI Scheduling<br/>Plans your time based on energy, deadlines, and availability.</div>
-        <div class="card">🚀 Side Hustle Mode<br/>Blocks creative time for your startup, projects, or freelance work.</div>
-        <div class="card">📈 Habit Intelligence<br/>Optimizes your calendar by learning from your routine.</div>
-      </div>
-    </section>
-
-    <!-- Clarity Mode Section -->
-    <section id="clarity" class="section">
-      <h2>Mental Clarity Mode</h2>
-      <div class="grid">
-        <div class="card">🧠 Burnout Alerts<br/>Get proactive nudges when your load is too much.</div>
-        <div class="card">💤 Energy-Aware Scheduling<br/>Syncs in breaks, rest, and off-time into your week.</div>
-        <div class="card">📊 Mood Sync<br/>Light feedback check-ins adjust your calendar dynamically.</div>
-        <div class="card">🎯 Focus Recovery<br/>Recovers momentum when attention dips.</div>
-      </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="section">
-      <h2>Plans & Add-Ons</h2>
-      <div class="grid">
-        <div class="card">Free Demo<br/>Try AI Scheduler, Clarity Mode, and Calendar Sync for free.<br/><button class="cta">Try Demo</button></div>
-        <div class="card">Pro<br/>Unlock the AI Coach, Hustle Pack, Resume Builder, and priority LMS features.<br/><button class="cta">Upgrade Now</button></div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <h2>Contact the Team</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" rows="5"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>© 2025 Syncademia AI. Built by Leonard Nicolass and team. Empowering students everywhere.</p>
-    </footer>
   </div>
 
-  <!-- Scripts -->
-  <script src="script.js"></script>
+  <!-- Sync Now Button Section (Standalone) -->
+  <section class="section fade-in" style="text-align: center; padding-top: 10px;">
+    <a href="#" id="syncNowStandaloneBtn" class="clarity-mode-btn hover-move">🔄 Sync Now</a>
+    <p style="margin-top: 16px; font-size: 1.1rem; max-width: 700px; margin-inline: auto; color: #444;">
+      Instantly connect your LMS (like D2L), Notion, and Google Calendar. Your deadlines, tasks, and notes sync effortlessly to your schedule.
+    </p>
+  </section>
+
+  <!-- Feature Gallery -->
+  <div class="section-wrapper">
+    <section id="gallery" class="section fade-in">
+      <h2 class="section-title hover-move">AI Productivity Features</h2>
+      <p class="section-description">Empower your academic life with intelligent tools that sync, schedule, and optimize — so you stay focused on what matters most.</p>
+      <div class="card-grid">
+        <div class="feature-card"><h3>📚 Academic Sync</h3><p>Auto-syncs deadlines from your LMS like D2L and Canvas to your calendar.</p><span class="tag">Sync</span></div>
+        <div class="feature-card"><h3>📆 AI Scheduling</h3><p>Plans your day based on your urgency, energy, and availability.</p><span class="tag">Scheduler</span></div>
+        <div class="feature-card"><h3>🚀 Side Hustle Mode</h3><p>Reserves space in your calendar for your startup or creative work.</p><span class="tag">Focus</span></div>
+        <div class="feature-card"><h3>📈 Habit Intelligence</h3><p>Optimizes your routine by learning your most productive times.</p><span class="tag">AI</span></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Mental Health Section -->
+  <div class="section-wrapper">
+    <section id="mental" class="section fade-in">
+      <h2 class="section-title hover-move">Student Mental Clarity</h2>
+      <p class="section-description">Your mind matters. Syncademia includes AI-powered wellness features to help you prevent burnout and maintain your focus and flow.</p>
+      <div class="card-grid">
+        <div class="feature-card"><h3>🧠 Burnout Alerts</h3><p>Monitors your workload and gently alerts you when you need rest.</p><span class="tag">Wellness</span></div>
+        <div class="feature-card"><h3>📊 Mood Sync</h3><p>Check-ins adapt your calendar to how you’re feeling each day.</p><span class="tag">Mental Health</span></div>
+        <div class="feature-card"><h3>💤 Energy-Aware Planning</h3><p>Schedules tasks when your mind is freshest based on energy patterns.</p><span class="tag">Balance</span></div>
+      </div>
+
+      <!-- Clarity Mode Button -->
+      <a href="#" id="openClarityModal" class="clarity-mode-btn hover-move">🧘 Enter Clarity Mode</a>
+    </section>
+  </div>
+
+  <!-- Clarity Mode Modal -->
+  <div class="modal-overlay" id="clarityModal">
+    <div class="modal-content">
+      <h2>Clarity Mode Activated</h2>
+      <p>Your screen is now distraction-free. Breaks and boundaries have been gently scheduled by AI. Take a breath and flow.</p>
+      <button class="close-modal" id="closeClarityModal">Close</button>
+    </div>
+  </div>
+
+  <!-- Roadmap Section -->
+  <div class="section-wrapper">
+    <section id="roadmap" class="section fade-in">
+      <h2 class="section-title hover-move">What's Coming Next</h2>
+      <p class="section-description">We’re constantly evolving Syncademia with powerful new features based on real student needs.</p>
+      <div class="card-grid">
+        <div class="feature-card"><h3>📌 Deep LMS Integration</h3><p>Connect directly with your school's platform to sync all due dates automatically.</p><span class="tag">Coming Q2</span></div>
+        <div class="feature-card"><h3>🧠 Adaptive AI Coach</h3><p>Get smart recommendations tailored to your study style and academic goals.</p><span class="tag">AI Upgrade</span></div>
+        <div class="feature-card"><h3>📲 Mobile App</h3><p>Stay synced on the go with our upcoming mobile companion app.</p><span class="tag">In Dev</span></div>
+        <div class="feature-card"><h3>📘 Notion + Google Docs Import</h3><p>Instantly convert your class notes into scheduled to-dos.</p><span class="tag">Sync+</span></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="section-wrapper">
+    <section id="contact" class="section fade-in">
+      <h2 class="section-title hover-move">Let's Connect</h2>
+      <p class="section-description">Have a feature request or want to collaborate? Reach out and let's build the future of education together.</p>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Syncademia. Designed for clarity-driven student life.</p>
+  </footer>
+
+  <!-- Floating UI Buttons -->
+  <button id="backToTop" title="Back to top">↑</button>
+  <button id="modeToggle" title="Toggle dark mode">🌙</button>
+
 </body>
 </html>
